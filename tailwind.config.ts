@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// D&D specific colors
+				parchment: '#f5e9d0',
+				leather: '#8b4513',
+				wood: '#5d4037',
+				gold: '#d4af37',
+				darkRed: '#8b0000',
+				forestGreen: '#228b22',
+				stoneGray: '#747474',
+			},
+			fontFamily: {
+				fantasy: ['MedievalSharp', 'Luminari', 'fantasy'],
+				scroll: ['Tangerine', 'cursive'],
+			},
+			backgroundImage: {
+				'parchment-texture': "url('/parchment-bg.jpg')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
