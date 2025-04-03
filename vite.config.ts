@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: mode === 'production' ? '/dice-dream-weaver/' : '/', // Add base path for GitHub Pages
+  base: '/dice-dream-weaver/', // Base path for GitHub Pages deployment
   plugins: [
     react(),
     mode === 'development' &&
