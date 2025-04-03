@@ -14,8 +14,9 @@ interface GeminiResponse {
 
 export async function queryGemini(prompt: string, apiKey: string): Promise<string> {
   try {
+    // Updated to use the latest API endpoint and model name
     const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" + apiKey,
+      "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key=" + apiKey,
       {
         method: "POST",
         headers: {
