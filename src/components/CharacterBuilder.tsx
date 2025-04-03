@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Dice, BookOpen, User, Swords } from "lucide-react";
+import { Dices, BookOpen, User, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface CharacterBuilderProps {
@@ -10,7 +10,7 @@ interface CharacterBuilderProps {
 const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onPromptSelect }) => {
   const commonPrompts = [
     {
-      icon: <Dice className="h-5 w-5" />,
+      icon: <Dices className="h-5 w-5" />,
       title: "Random Character",
       prompt: "Generate a random D&D character for me with stats, race, and class.",
     },
